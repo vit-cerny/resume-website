@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vít Černý | IT Specialista</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100">
+    <!-- NAV -->
+    <nav class="fixed top-0 w-full bg-zinc-900/80 backdrop-blur-md z-50 border-b border-zinc-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-500">Vít Černý</h1>
+            <div class="flex gap-8 text-sm font-medium">
+                <a href="#o-mne" class="hover:text-blue-400 transition">O mně</a>
+                <a href="#dovednosti" class="hover:text-blue-400 transition">Dovednosti</a>
+                <a href="#zkusenosti" class="hover:text-blue-400 transition">Zkušenosti</a>
+                <a href="#vzdelani" class="hover:text-blue-400 transition">Vzdělání</a>
+                <a href="#projekty" class="hover:text-blue-400 transition">Projekty</a>
+                <a href="#kontakt" class="hover:text-blue-400 transition">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-6xl font-bold leading-none mb-4">Vít Černý</h2>
+                <p class="text-3xl text-blue-300 mb-6">Junior IT Specialista • Fullstack Developer • Síťový Admin</p>
+                <p class="text-xl text-zinc-300 max-w-lg mb-8">
+                    Absolvent SŠ informatiky Brno (2025). CCNAv7. Rychle se učím, řeším problémy a tvořím funkční řešení.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#kontakt" class="bg-white text-zinc-900 px-8 py-4 rounded-xl font-semibold flex items-center gap-3 hover:bg-blue-400 hover:text-white transition">
+                        <i class="fas fa-paper-plane"></i> Kontaktovat
+                    </a>
+                    <a href="#" onclick="alert('CV ke stažení v PDF (nahrajte si originál)')" class="border border-white/70 px-8 py-4 rounded-xl font-semibold flex items-center gap-3 hover:bg-white/10 transition">
+                        <i class="fas fa-download"></i> Stáhnout CV
+                    </a>
+                </div>
+                <div class="flex gap-8 mt-12 text-sm">
+                    <div><i class="fas fa-map-marker-alt text-blue-400"></i> Oslavany</div>
+                    <div><i class="fas fa-phone text-blue-400"></i> +420 799 505 843</div>
+                    <div><i class="fas fa-envelope text-blue-400"></i> witek.cerny@seznam.cz</div>
+                </div>
+            </div>
+            <div class="hidden md:flex justify-center">
+                <div class="w-80 h-80 bg-white/10 backdrop-blur-xl rounded-3xl flex items-center justify-center border border-white/20 text-9xl">
+                    👨‍💻
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="o-mne" class="py-24 bg-zinc-900">
+        <div class="max-w-4xl mx-auto px-6">
+            <h3 class="text-4xl font-semibold mb-8 flex items-center gap-3"><i class="fas fa-user text-blue-500"></i> Profesní profil</h3>
+            <div class="prose prose-invert text-lg leading-relaxed">
+                Absolvent SŠ informatiky Brno (2025) se zaměřením na sítě, programování a správu OS. Držitel CCNAv7. Praktické zkušenosti z IT podpory ve státní správě, elektroinstalací, správy Linux serverů a fullstack vývoje webů včetně AI integrací. Analytický, samostatný, rychle se učím.
+            </div>
+        </div>
+    </section>
+
+    <!-- DOVEDNOSTI -->
+    <section id="dovednosti" class="py-24 bg-zinc-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-4xl font-semibold mb-12 text-center">Klíčové dovednosti</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-900 p-8 rounded-3xl">
+                    <h4 class="font-semibold text-xl mb-6 text-blue-400">Programování</h4>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex gap-3"><span class="text-green-400">✓</span> C (pokročilý)</li>
+                        <li class="flex gap-3"><span class="text-green-400">✓</span> Python (pokročilý)</li>
+                        <li class="flex gap-3"><span class="text-green-400">✓</span> HTML/CSS + JS (pokročilý)</li>
+                        <li class="flex gap-3"><span class="text-amber-400">●</span> C#, C++, Java (základy)</li>
+                    </ul>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-3xl">
+                    <h4 class="font-semibold text-xl mb-6 text-blue-400">Systémy &amp; Sítě</h4>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex gap-3"><span class="text-green-400">✓</span> Linux / Bash (pokročilý)</li>
+                        <li class="flex gap-3"><span class="text-green-400">✓</span> Windows Server</li>
+                        <li class="flex gap-3"><span class="text-green-400">✓</span> CCNAv7 (2 moduly)</li>
+                        <li class="flex gap-3"><span class="text-green-400">✓</span> Docker, Nginx, Git</li>
+                    </ul>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-3xl">
+                    <h4 class="font-semibold text-xl mb-6 text-blue-400">Další</h4>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex gap-3"><span class="text-green-400">✓</span> Fullstack web (React, Node, PHP)</li>
+                        <li class="flex gap-3"><span class="text-green-400">✓</span> AI integrace (OpenAI, LangChain)</li>
+                        <li class="flex gap-3"><span class="text-green-400">✓</span> Elektroinstalace &amp; hardware</li>
+                        <li class="flex gap-3"><span class="text-green-400">✓</span> Angličtina C1–C2</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ZKUSENOSTI -->
+    <section id="zkusenosti" class="py-24 bg-zinc-900">
+        <div class="max-w-4xl mx-auto px-6">
+            <h3 class="text-4xl font-semibold mb-12 flex items-center gap-3"><i class="fas fa-briefcase text-blue-500"></i> Pracovní zkušenosti</h3>
+            <div class="space-y-12">
+                <div class="flex gap-8">
+                    <div class="w-28 text-right text-sm text-zinc-400 shrink-0">2024 – teď</div>
+                    <div>
+                        <div class="font-semibold text-xl">Elektroinstalace ČR – Panorama Dlouhá</div>
+                        <div class="text-blue-400">Montér / Technik</div>
+                        <ul class="list-disc pl-6 mt-3 space-y-1 text-zinc-300">
+                            <li>Měření, tažení kabelů, zapojování rozváděčů</li>
+                            <li>Revize a ladění systémů</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex gap-8">
+                    <div class="w-28 text-right text-sm text-zinc-400 shrink-0">květen–říjen 2024</div>
+                    <div>
+                        <div class="font-semibold text-xl">Vězeňská služba ČR – Věznice Rapotice</div>
+                        <div class="text-blue-400">Stáž IT oddělení</div>
+                        <ul class="list-disc pl-6 mt-3 space-y-1 text-zinc-300">
+                            <li>Údržba PC, tiskáren, síťových prvků</li>
+                            <li>Záchrana dat, instalace OS/BIOS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex gap-8">
+                    <div class="w-28 text-right text-sm text-zinc-400 shrink-0">2023 – teď</div>
+                    <div>
+                        <div class="font-semibold text-xl">Freelance Fullstack &amp; Linux Admin</div>
+                        <div class="text-blue-400">Webové stránky + cloud servery</div>
+                        <ul class="list-disc pl-6 mt-3 space-y-1 text-zinc-300">
+                            <li>React / Node / Docker / AI chatboty</li>
+                            <li>Ubuntu servery s Grafana, Ansible</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VZDELANI -->
+    <section id="vzdelani" class="py-24 bg-zinc-950">
+        <div class="max-w-4xl mx-auto px-6">
+            <h3 class="text-4xl font-semibold mb-12 flex items-center gap-3"><i class="fas fa-graduation-cap text-blue-500"></i> Vzdělání</h3>
+            <div class="bg-zinc-900 p-10 rounded-3xl">
+                <div class="text-2xl font-semibold">Střední škola informatiky, poštovnictví a finančnictví Brno</div>
+                <div class="text-blue-400 mt-2">září 2021 – červen 2025</div>
+                <div class="mt-6 text-zinc-300">Maturita: ČJ, AJ, IT, OS<br>
+                Zaměření: Programování (C, Python, HTML/CSS), Sítě, Linux/Windows</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFIKATY + PROJEKTY -->
+    <section id="projekty" class="py-24 bg-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-4xl font-semibold mb-12 text-center">Certifikáty &amp; Projekty</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-zinc-800 p-8 rounded-3xl">
+                    <div class="flex items-center gap-4 mb-6">
+                        <i class="fas fa-certificate text-4xl text-yellow-400"></i>
+                        <div>
+                            <div class="font-semibold">CCNAv7: Introduction to Networks</div>
+                            <div class="text-sm text-zinc-400">26. 4. 2024</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-certificate text-4xl text-yellow-400"></i>
+                        <div>
+                            <div class="font-semibold">CCNAv7: Switching, Routing, and Wireless Essentials</div>
+                            <div class="text-sm text-zinc-400">10. 6. 2024</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-zinc-800 p-8 rounded-3xl">
+                    <div class="font-semibold text-xl mb-6">Vybrané projekty</div>
+                    <ul class="space-y-6 text-zinc-300">
+                        <li class="flex gap-4">
+                            <i class="fas fa-globe text-blue-400 mt-1"></i>
+                            <div>Fullstack weby pro firmy (HTML/CSS/JS + Node/PHP + AI chatbot)</div>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fas fa-server text-blue-400 mt-1"></i>
+                            <div>Správa vlastních Ubuntu cloud serverů (Docker, Grafana, Ansible)</div>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fas fa-code text-blue-400 mt-1"></i>
+                            <div>Responzivní weby + Git + PostgreSQL/MySQL</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="py-24 bg-zinc-950 border-t border-zinc-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-4xl font-semibold mb-6">Jsem připravený přidat se k vašemu týmu</h3>
+            <p class="text-xl text-zinc-400 mb-12">Rychle se učím. Řeším problémy. Doručuji výsledky.</p>
+            <a href="mailto:witek.cerny@seznam.cz" class="inline-flex items-center gap-4 bg-blue-600 hover:bg-blue-500 transition text-white text-2xl font-semibold px-16 py-8 rounded-3xl">
+                <i class="fas fa-envelope"></i>
+                witek.cerny@seznam.cz
+            </a>
+            <div class="mt-16 text-zinc-500">+420 799 505 843 • Oslavany • 21. 12. 2005</div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 text-center text-zinc-500 text-sm">
+        © 2025 Vít Černý • Vytvořeno pro získání zaměstnání v IT
+    </footer>
+
+    <script>
+        // Tailwind script already loaded
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
